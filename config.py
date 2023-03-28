@@ -6,10 +6,15 @@ device = 'cuda' # or 'cpu'
 import torch
 torch.cuda.set_device(0)
 
+# # data settings
+# dataset_path = "dummy_dataset"
+# class_name = "dummy_class"
+# modelname = "dummy_test"
+
 # data settings
-dataset_path = "dummy_dataset"
-class_name = "dummy_class"
-modelname = "dummy_test"
+dataset_path = "mvtec"
+class_name = "bottle"
+modelname = "mvtec_bottle"
 
 img_size = (448, 448)
 img_dims = [3] + list(img_size)
